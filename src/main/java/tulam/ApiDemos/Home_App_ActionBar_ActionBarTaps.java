@@ -46,7 +46,22 @@ public class Home_App_ActionBar_ActionBarTaps {
 	private WebElement ScrollView;
 	public void countTabs(){
 		int Tabs  = 10;
-		int CountTabs = Tab++ ;
+		int CountTabs = 
+		if(Tabs == CountTabs){
+			System.out.println("So tabs la:" + CountTabs);
+		}else{
+			System.out.println("Number Tabs:"+ScrollView.getSize());
+		}
+		
+	}
+	
+	
+	
+	@AndroidFindBy(xpath="/hierarchy/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.widget.HorizontalScrollView")
+	private WebElement ScrollView;
+	public void countTabs(){
+		int Tabs  = 10;
+		int CountTabs = 
 		if(Tabs == CountTabs){
 			System.out.println("So tabs la:" + CountTabs);
 		}else{
