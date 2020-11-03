@@ -1,0 +1,18 @@
+package tulam.ApiDemos;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
+
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.pagefactory.AndroidFindBy;
+import io.appium.java_client.pagefactory.AppiumFieldDecorator;
+
+public class Home_Accessibility_AccessibilityService {
+	public Home_Accessibility_AccessibilityService(AppiumDriver driver){
+		PageFactory.initElements(new AppiumFieldDecorator(driver), this);
+	}
+	
+	@AndroidFindBy(xpath="(//android.widget.TextView)[2]")
+	public WebElement AccessibilityService;
+	
+}
