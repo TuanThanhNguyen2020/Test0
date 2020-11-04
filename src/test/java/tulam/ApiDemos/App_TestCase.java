@@ -31,7 +31,7 @@ public class App_TestCase extends base{
 		home_App_ActionBar_ActionBarTaps.ABTTitle.getText();
 		home_App_ActionBar_ActionBarTaps.AddNewTab10Times();
 		home_App_ActionBar_ActionBarTaps.clickToggleTabMode();
-		home_App_ActionBar_ActionBarTaps.countTabs();
+//		home_App_ActionBar_ActionBarTaps.countTabs();
 		
 		
 		
